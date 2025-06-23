@@ -38,7 +38,7 @@ a {
 }
 
 
-.logo {
+/**.logo {
   height: 100px;
   margin-bottom: 45px;
 }
@@ -57,6 +57,29 @@ a {
   transform: scale(1.05);
   animation: greenPulse 1.5s ease-in-out infinite;
 }
+
+.logo {
+  height: 60px; /* reduced from 100px */
+  margin-bottom: 20px; /* reduced from 45px */
+}
+
+.logo img {
+  height: 100%; /* reduced from 150% */
+  width: 180px; /* reduced from 250px */
+  display: block;
+  border-radius: 50%;
+  border: 1.5px solid #00b4d8;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* slightly softer shadow */
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+  animation: greenPulse 1.5s ease-in-out infinite;
+}
+
+
+
 
 .menu-toggle {
   display: none;
