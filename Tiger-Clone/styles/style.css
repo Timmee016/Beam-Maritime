@@ -1,5 +1,4 @@
-/* ==== Reset & Global Styles ==== */
-* {
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +9,7 @@ body {
   line-height: 1.6;
   background: #f9f9f9;
   color: #333;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 a {
@@ -44,9 +43,10 @@ a {
 }
 
 .logo img {
-  height: 150%;
-  width: 250px;
-  display: block;
+  height: auto;
+  max-height: 80px;
+  width: auto;
+  max-width: 200px;
   border-radius: 50%;
   border: 1.5px solid #00b4d8;
   transition: transform 0.3s ease-in-out;
@@ -72,7 +72,7 @@ a {
   background-color: #00b4d8;
   color: rgb(0, 0, 0);
   font-weight: 700;
-  font-size: 13px;
+  font-size: 13px; 
   text-align: center;
   line-height: 50px;
   border-radius: 1px;
@@ -84,6 +84,12 @@ a {
 .nav-btn:hover {
   background-color: #0096c7;
   color: #fff;
+}
+
+.navbar {
+  height: auto;
+  padding: 1rem 5%;
+  flex-wrap: wrap;
 }
 
 
@@ -104,6 +110,8 @@ a {
   .nav-links.active {
     display: flex;
   }
+
+
 }
 
 
