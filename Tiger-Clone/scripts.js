@@ -74,3 +74,12 @@ const observer = new IntersectionObserver((entries, observer) => {
 serviceCards.forEach(card => {
     observer.observe(card);
 });
+
+
+
+const toggle = document.getElementById('menu-toggle');
+const navWrapper = document.querySelector('.nav-wrapper');
+
+toggle.addEventListener('click', () => {
+  navWrapper.classList.toggle('active');
+});
